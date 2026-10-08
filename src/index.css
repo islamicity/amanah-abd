@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   High Contrast Accessibility Theme for Field Officers (Sunlight & WCAG AAA)
+   ========================================================================== */
+.high-contrast {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+.high-contrast .bg-slate-950,
+.high-contrast .bg-slate-900,
+.high-contrast .bg-slate-800,
+.high-contrast .bg-slate-800\/60,
+.high-contrast .bg-slate-800\/80,
+.high-contrast .bg-slate-800\/90,
+.high-contrast .bg-slate-900\/80,
+.high-contrast .bg-slate-900\/90 {
+  background-color: #0d0d0d !important;
+  border-color: #ffffff !important;
+}
+
+.high-contrast .border-slate-800,
+.high-contrast .border-slate-700,
+.high-contrast .border-slate-600 {
+  border-color: #e2e8f0 !important;
+  border-width: 1.5px !important;
+}
+
+.high-contrast .text-slate-400,
+.high-contrast .text-slate-500 {
+  color: #e2e8f0 !important;
+  font-weight: 500 !important;
+}
+
+.high-contrast .text-slate-300 {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+.high-contrast button {
+  font-weight: 700 !important;
+}
+
+.high-contrast button:focus-visible {
+  outline: 3px solid #facc15 !important;
+  outline-offset: 2px !important;
+}
+
+.high-contrast input,
+.high-contrast textarea,
+.high-contrast select {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: 2px solid #ffffff !important;
+}
+
+/* ==========================================================================
+   Interactive Leaflet Map & Custom Popups/Tooltips Styling
+   ========================================================================== */
+.leaflet-container {
+  font-family: inherit !important;
+  background-color: #090d16 !important;
+}
+
+.leaflet-custom-dark-tooltip {
+  background-color: rgba(15, 23, 42, 0.95) !important;
+  backdrop-filter: blur(8px) !important;
+  border: 1px solid rgba(51, 65, 85, 0.8) !important;
+  border-radius: 8px !important;
+  color: #f8fafc !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5) !important;
+  padding: 6px 10px !important;
+}
+
+.leaflet-custom-dark-tooltip::before {
+  border-top-color: rgba(15, 23, 42, 0.95) !important;
+}
+
+.leaflet-custom-popup-box .leaflet-popup-content-wrapper {
+  background-color: #ffffff !important;
+  border-radius: 14px !important;
+  box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
+  padding: 8px 10px !important;
+}
+
+.leaflet-custom-popup-box .leaflet-popup-content {
+  margin: 6px 6px !important;
+  line-height: 1.4 !important;
+}
+
+.leaflet-custom-popup-box .leaflet-popup-tip {
+  background-color: #ffffff !important;
+}
+
+.complaint-marker-pin {
+  background: transparent !important;
+  border: none !important;
+}
+
+.station-div-icon {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* ==========================================================================
+   QR Code Scanner Laser Scan Beam Animation
+   ========================================================================== */
+@keyframes qr-laser {
+  0% {
+    top: 6%;
+    opacity: 0.75;
+  }
+  50% {
+    top: 92%;
+    opacity: 1;
+  }
+  100% {
+    top: 6%;
+    opacity: 0.75;
+  }
+}
+
+.animate-qr-laser {
+  animation: qr-laser 2.2s ease-in-out infinite;
+}
+
+
+
